@@ -12,6 +12,8 @@ sudo dfu-programmer atmega32u4 start
 
 ## PLANCK
 
+Keymap is located in `qmk_firmware/keyboards/planck/keymaps/surprisetalk`.
+
 ``` bash
 sudo aura -A dfu-programmer
 cd qmk_firmware
