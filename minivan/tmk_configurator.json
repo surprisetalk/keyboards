@@ -191,12 +191,12 @@
       ],
       [
         {
-          "value": "LALT",
+          "value": "LCTRL",
           "type": null,
           "mod": null
         },
         {
-          "value": "LCTRL",
+          "value": "LALT",
           "type": null,
           "mod": null
         },
@@ -221,12 +221,12 @@
           "mod": null
         },
         {
-          "value": "RCTRL",
+          "value": "RALT",
           "type": null,
           "mod": null
         },
         {
-          "value": "RALT",
+          "value": "RCTRL",
           "type": null,
           "mod": null
         }
