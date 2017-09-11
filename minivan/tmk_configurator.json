@@ -191,12 +191,12 @@
       ],
       [
         {
-          "value": "LCTRL",
+          "value": "LALT",
           "type": null,
           "mod": null
         },
         {
-          "value": "LALT",
+          "value": "LCTRL",
           "type": null,
           "mod": null
         },
@@ -221,12 +221,12 @@
           "mod": null
         },
         {
-          "value": "RALT",
+          "value": "RCTRL",
           "type": null,
           "mod": null
         },
         {
-          "value": "RCTRL",
+          "value": "RALT",
           "type": null,
           "mod": null
         }
@@ -270,7 +270,7 @@
           "mod": null
         },
         {
-          "value": "VOLU",
+          "value": "VOLD",
           "type": null,
           "mod": null
         },
@@ -280,7 +280,7 @@
           "mod": null
         },
         {
-          "value": "VOLD",
+          "value": "VOLU",
           "type": null,
           "mod": null
         },
