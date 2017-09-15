@@ -6,7 +6,7 @@
 ``` bash
 sudo aura -A dfu-progrmmer
 sudo dfu-programmer atmega32u4 erase
-sudo dfu-programmer atmega32u4 flash tv44-rev3_2017-09-10-20-13-46.hex
+sudo dfu-programmer atmega32u4 flash minivan.hex
 sudo dfu-programmer atmega32u4 start
 ```
 

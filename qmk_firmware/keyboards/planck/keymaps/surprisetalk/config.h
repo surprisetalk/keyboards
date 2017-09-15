@@ -3,7 +3,7 @@
 
 #include "../../config.h"
 
-#define TAPPING_TERM 150
+#define TAPPING_TERM 100
 
 #ifdef AUDIO_ENABLE
     #define STARTUP_SONG SONG(PLANCK_SOUND)

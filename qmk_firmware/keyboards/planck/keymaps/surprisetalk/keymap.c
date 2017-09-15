@@ -94,7 +94,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = {
   {KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______},
   {_______, KC_LPRN, KC_RPRN, KC_LBRC, KC_RBRC, _______, _______, KC_4,    KC_5,    KC_6,    KC_SLSH, KC_EQL },
-  {_______, KC_LCBR, KC_RCBR, KC_LPRN, KC_RPRN, _______, KC_0,    KC_1,    KC_2,    KC_3,    _______, KC_BSLS},
+  {_______, KC_LCBR, KC_RCBR, KC_LPRN, KC_RPRN, _______, _______, KC_1,    KC_2,    KC_3,    _______, KC_BSLS},
   {_______, _______, _______, _______, _______, _______, _______, KC_0,    _______, _______, _______, _______}
 },
 

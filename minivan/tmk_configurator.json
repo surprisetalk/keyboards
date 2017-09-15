@@ -68,8 +68,8 @@
       [
         {
           "value": "ESCAPE",
-          "type": null,
-          "mod": null
+          "type": "tapkey",
+          "mod": "LCTRL"
         },
         {
           "value": "a",
@@ -123,8 +123,8 @@
         },
         {
           "value": "-",
-          "type": null,
-          "mod": "L1"
+          "type": "tapkey",
+          "mod": "RCTRL"
         }
       ],
       [
@@ -185,8 +185,8 @@
         },
         {
           "value": "ENTER",
-          "type": null,
-          "mod": null
+          "type": "tapkey",
+          "mod": "RSHIFT"
         }
       ],
       [
@@ -285,12 +285,12 @@
           "mod": null
         },
         {
-          "value": "/",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
         {
-          "value": "=",
+          "value": "TRNS",
           "type": null,
           "mod": null
         }
@@ -347,12 +347,12 @@
           "mod": null
         },
         {
-          "value": "TRNS",
+          "value": "/",
           "type": null,
           "mod": null
         },
         {
-          "value": "\\",
+          "value": "=",
           "type": null,
           "mod": null
         }
@@ -414,7 +414,7 @@
           "mod": null
         },
         {
-          "value": "TRNS",
+          "value": "\\",
           "type": null,
           "mod": null
         }
@@ -451,12 +451,12 @@
           "mod": null
         },
         {
-          "value": "FLASH",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
         {
-          "value": "TRNS",
+          "value": "FLASH",
           "type": null,
           "mod": null
         }
@@ -515,12 +515,12 @@
           "mod": null
         },
         {
-          "value": "/",
+          "value": "0",
           "type": null,
           "mod": null
         },
         {
-          "value": "=",
+          "value": "TRNS",
           "type": null,
           "mod": null
         }
@@ -577,12 +577,12 @@
           "mod": null
         },
         {
-          "value": "TRNS",
+          "value": "/",
           "type": null,
           "mod": null
         },
         {
-          "value": "\\",
+          "value": "=",
           "type": null,
           "mod": null
         }
@@ -619,7 +619,7 @@
           "mod": null
         },
         {
-          "value": "0",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
@@ -644,7 +644,7 @@
           "mod": null
         },
         {
-          "value": "TRNS",
+          "value": "\\",
           "type": null,
           "mod": null
         }
@@ -681,12 +681,12 @@
           "mod": null
         },
         {
-          "value": "FLASH",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
         {
-          "value": "TRNS",
+          "value": "FLASH",
           "type": null,
           "mod": null
         }
