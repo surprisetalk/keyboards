@@ -1,5 +1,4 @@
-/* Copyright 2015-2017 Jack Humbert
- *
+/* Copyright 2015-2017 Jack Humbert *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 2 of the License, or
@@ -57,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   {ALT_T(KC_GRV ), KC_QUOT, KC_COMM, KC_DOT , KC_P   , KC_Y   , KC_F   , KC_G   , KC_C   , KC_R   , KC_L   , ALT_T(KC_SLSH)},
   {CTL_T(KC_ESC ), KC_A   , KC_O   , KC_E   , KC_U   , KC_I   , KC_D   , KC_H   , KC_T   , KC_N   , KC_S   , CTL_T(KC_MINS)},
   {SFT_T(KC_BSPC), KC_SCLN, KC_Q   , KC_J   , KC_K   , KC_X   , KC_B   , KC_M   , KC_W   , KC_V   , KC_Z   , CTL_T(KC_EQL )},
-  {GUI_T(KC_TAB ), KC_LCBR, KC_LBRC, TH_ESC , TH_BSPC, TC_SPC , TH_ENT ,        , KC_RPRN, KC_RBRC, KC_RCRB, GUI_T(KC_BSLS)}
+  {GUI_T(KC_TAB ), KC_LCBR, KC_LBRC, KC_LPRN, TH_ESC , TH_BSPC, TH_SPC , TH_ENT , KC_RPRN, KC_RBRC, KC_RCBR, GUI_T(KC_BSLS)}
 },
 
 /* Qwerty
@@ -75,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   {ALT_T(KC_GRV ), KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   , KC_Y   , KC_U   , KC_I   , KC_O   , KC_P   , ALT_T(KC_SLSH)},
   {CTL_T(KC_ESC ), KC_A   , KC_S   , KC_D   , KC_F   , KC_G   , KC_H   , KC_J   , KC_K   , KC_L   , KC_SCLN, CTL_T(KC_MINS)},
   {SFT_T(KC_BSPC), KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_N   , KC_M   , KC_COMM, KC_DOT , KC_SLSH, CTL_T(KC_EQL )},
-  {GUI_T(KC_TAB ), KC_LCBR, KC_LBRC, TH_ESC , TH_BSPC, TC_SPC , TH_ENT ,        , KC_RPRN, KC_RBRC, KC_RCRB, GUI_T(KC_BSLS)}
+  {GUI_T(KC_TAB ), KC_LCBR, KC_LBRC, KC_LPRN, TH_ESC , TH_BSPC, TH_SPC , TH_ENT , KC_RPRN, KC_RBRC, KC_RCBR, GUI_T(KC_BSLS)}
 },
 
 /* Lower
