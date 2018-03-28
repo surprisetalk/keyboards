@@ -19,16 +19,16 @@
 extern keymap_config_t keymap_config;
 
 enum planck_layers {
-  _DVORAK,
   _QWERTY,
+  _DVORAK,
   _LOWER,
   _RAISE,
   _ADJUST
 };
 
 enum planck_keycodes {
-  DVORAK = SAFE_RANGE,
-  QWERTY,
+  QWERTY = SAFE_RANGE,
+  DVORAK,
   LOWER,
   RAISE,
   ADJUST
@@ -36,8 +36,9 @@ enum planck_keycodes {
 
 #define TH_ESC  GUI_T( KC_ESC )
 #define TH_SPC  SFT_T( KC_SPC )
-#define TH_BSPC LT( LOWER, KC_BSPC )
-#define TH_ENT  LT( RAISE, KC_ENT  )
+#define TH_BSPC LT( _LOWER, KC_BSPC )
+#define TH_ENT  LT( _RAISE, KC_ENT  )
+// Ideas for the thumb keys.
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -55,8 +56,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_DVORAK] = {
   {ALT_T(KC_GRV ), KC_QUOT, KC_COMM, KC_DOT , KC_P   , KC_Y   , KC_F   , KC_G   , KC_C   , KC_R   , KC_L   , ALT_T(KC_SLSH)},
   {CTL_T(KC_ESC ), KC_A   , KC_O   , KC_E   , KC_U   , KC_I   , KC_D   , KC_H   , KC_T   , KC_N   , KC_S   , CTL_T(KC_MINS)},
-  {SFT_T(KC_BSPC), KC_SCLN, KC_Q   , KC_J   , KC_K   , KC_X   , KC_B   , KC_M   , KC_W   , KC_V   , KC_Z   , CTL_T(KC_EQL )},
-  {GUI_T(KC_TAB ), KC_LCBR, KC_LBRC, KC_LPRN, TH_ESC , TH_BSPC, TH_SPC , TH_ENT , KC_RPRN, KC_RBRC, KC_RCBR, GUI_T(KC_BSLS)}
+  {SFT_T(KC_BSPC), KC_SCLN, KC_Q   , KC_J   , KC_K   , KC_X   , KC_B   , KC_M   , KC_W   , KC_V   , KC_Z   , SFT_T(KC_EQL )},
+  {GUI_T(KC_TAB ), KC_LCBR, KC_LBRC, KC_LPRN, KC_LGUI, LOWER  , KC_SPC , TH_ENT , KC_RPRN, KC_RBRC, KC_RCBR, GUI_T(KC_BSLS)}
 },
 
 /* Qwerty
@@ -71,10 +72,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = {
+  // BUG: a lot of these are wrong when translating to dvorak...
   {ALT_T(KC_GRV ), KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   , KC_Y   , KC_U   , KC_I   , KC_O   , KC_P   , ALT_T(KC_SLSH)},
   {CTL_T(KC_ESC ), KC_A   , KC_S   , KC_D   , KC_F   , KC_G   , KC_H   , KC_J   , KC_K   , KC_L   , KC_SCLN, CTL_T(KC_MINS)},
-  {SFT_T(KC_BSPC), KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_N   , KC_M   , KC_COMM, KC_DOT , KC_SLSH, CTL_T(KC_EQL )},
-  {GUI_T(KC_TAB ), KC_LCBR, KC_LBRC, KC_LPRN, TH_ESC , TH_BSPC, TH_SPC , TH_ENT , KC_RPRN, KC_RBRC, KC_RCBR, GUI_T(KC_BSLS)}
+  {SFT_T(KC_BSPC), KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_N   , KC_M   , KC_COMM, KC_DOT , KC_SLSH, SFT_T(KC_EQL )},
+  {GUI_T(KC_TAB ), KC_LCBR, KC_LBRC, KC_LPRN, KC_LGUI, LOWER  , KC_SPC , TH_ENT , KC_RPRN, KC_RBRC, KC_RCBR, GUI_T(KC_BSLS)}
 },
 
 /* Lower
@@ -89,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = {
-  {KC_GRV , KC_1   , KC_2   , KC_3   , KC_4   , KC_5   , KC_6   , KC_7   , KC_8   , KC_9   , KC_0   , _______},
+  {_______, KC_1   , KC_2   , KC_3   , KC_4   , KC_5   , KC_6   , KC_7   , KC_8   , KC_9   , KC_0   , _______},
   {_______, _______, _______, _______, _______, _______, _______, KC_4   , KC_5   , KC_6   , KC_UNDS, _______},
   {_______, _______, _______, _______, _______, _______, _______, KC_1   , KC_2   , KC_3   , KC_PLUS, _______},
   {_______, _______, _______, _______, _______, _______, _______, KC_0   , _______, _______, _______, _______}
@@ -107,10 +109,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = {
-  {_______, KC_F1  , KC_F2  , KC_F3  , KC_F4  , AU_OFF , AU_ON  , KC_VOLD, KC_UP  , KC_VOLU, _______, DVORAK },
-  {_______, KC_F5  , KC_F6  , KC_F7  , KC_F8  , MUV_IN , MUV_DE , KC_LEFT, KC_DOWN, KC_RGHT, _______, QWERTY },
-  {_______, KC_F9  , KC_F10 , KC_F11 , KC_F12 , MU_OFF , MU_ON  , KC_MPRV, KC_MPLY, KC_MNXT, _______, DEBUG  },
-  {_______, _______, _______, _______, _______, MI_OFF , MI_ON  , _______, _______, _______, _______, RESET  }
+  {_______, KC_F1  , KC_F2  , KC_F3  , KC_F4  , _______, _______, KC_VOLD, KC_UP  , KC_VOLU, _______, DVORAK }, // AU_OFF , AU_ON  ,
+  {_______, KC_F5  , KC_F6  , KC_F7  , KC_F8  , _______, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, QWERTY }, // MUV_IN , MUV_DE ,
+  {_______, KC_F9  , KC_F10 , KC_F11 , KC_F12 , _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, DEBUG  }, // MU_OFF , MU_ON  ,
+  {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RESET  }  // MI_OFF , MI_ON  ,
 }
 
 };
