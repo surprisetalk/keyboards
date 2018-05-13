@@ -1,14 +1,13 @@
-
 {
-  "keyboard": "minivan_rev3",
-  "activeLayout": 0,
+  "keyboard": "minivan_rev1",
+  "activeLayout": "0",
   "keymap": [
     [
       [
         {
-          "value": "TAB",
-          "type": null,
-          "mod": null
+          "value": "`",
+          "type": "tapkey",
+          "mod": "LALT"
         },
         {
           "value": "'",
@@ -26,44 +25,44 @@
           "mod": null
         },
         {
-          "value": "p",
+          "value": "P",
           "type": null,
           "mod": null
         },
         {
-          "value": "y",
+          "value": "Y",
           "type": null,
           "mod": null
         },
         {
-          "value": "f",
+          "value": "F",
           "type": null,
           "mod": null
         },
         {
-          "value": "g",
+          "value": "G",
           "type": null,
           "mod": null
         },
         {
-          "value": "c",
+          "value": "C",
           "type": null,
           "mod": null
         },
         {
-          "value": "r",
+          "value": "R",
           "type": null,
           "mod": null
         },
         {
-          "value": "l",
+          "value": "L",
           "type": null,
           "mod": null
         },
         {
-          "value": "BSPACE",
-          "type": null,
-          "mod": null
+          "value": "/",
+          "type": "tapkey",
+          "mod": "RALT"
         }
       ],
       [
@@ -73,52 +72,52 @@
           "mod": "LCTRL"
         },
         {
-          "value": "a",
+          "value": "A",
           "type": null,
           "mod": null
         },
         {
-          "value": "o",
+          "value": "O",
           "type": null,
           "mod": null
         },
         {
-          "value": "e",
+          "value": "E",
           "type": null,
           "mod": null
         },
         {
-          "value": "u",
+          "value": "U",
           "type": null,
           "mod": null
         },
         {
-          "value": "i",
+          "value": "I",
           "type": null,
           "mod": null
         },
         {
-          "value": "d",
+          "value": "D",
           "type": null,
           "mod": null
         },
         {
-          "value": "h",
+          "value": "H",
           "type": null,
           "mod": null
         },
         {
-          "value": "t",
+          "value": "T",
           "type": null,
           "mod": null
         },
         {
-          "value": "n",
+          "value": "N",
           "type": null,
           "mod": null
         },
         {
-          "value": "s",
+          "value": "S",
           "type": null,
           "mod": null
         },
@@ -130,8 +129,8 @@
       ],
       [
         {
-          "value": "LSHIFT",
-          "type": null,
+          "value": "BSPACE",
+          "type": "tapkey",
           "mod": "LSHIFT"
         },
         {
@@ -140,76 +139,76 @@
           "mod": null
         },
         {
-          "value": "q",
+          "value": "Q",
           "type": null,
           "mod": null
         },
         {
-          "value": "j",
+          "value": "J",
           "type": null,
           "mod": null
         },
         {
-          "value": "k",
+          "value": "K",
           "type": null,
           "mod": null
         },
         {
-          "value": "x",
+          "value": "X",
           "type": null,
           "mod": null
         },
         {
-          "value": "b",
+          "value": "B",
           "type": null,
           "mod": null
         },
         {
-          "value": "m",
+          "value": "M",
           "type": null,
           "mod": null
         },
         {
-          "value": "w",
+          "value": "W",
           "type": null,
           "mod": null
         },
         {
-          "value": "v",
+          "value": "V",
           "type": null,
           "mod": null
         },
         {
-          "value": "z",
+          "value": "Z",
           "type": null,
           "mod": null
         },
         {
-          "value": "ENTER",
+          "value": "=",
           "type": "tapkey",
           "mod": "RSHIFT"
         }
       ],
       [
         {
-          "value": "LCTRL",
+          "value": "TAB",
+          "type": "tapkey",
+          "mod": "LGUI"
+        },
+        {
+          "value": "(",
           "type": null,
           "mod": null
         },
         {
-          "value": "LALT",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "LGUI",
-          "type": null,
-          "mod": null
+          "value": "ESCAPE",
+          "type": "tapkey",
+          "mod": "RGUI"
         },
         {
           "value": "L2",
           "type": "momentary",
-          "mod": null
+          "mod": "L1"
         },
         {
           "value": "SPACE",
@@ -217,256 +216,222 @@
           "mod": null
         },
         {
-          "value": "L1",
-          "type": "momentary",
-          "mod": null
+          "value": "ENTER",
+          "type": "tapkey",
+          "mod": "L3"
         },
         {
-          "value": "RALT",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "RCTRL",
-          "type": null,
-          "mod": null
-        }
-      ]
-    ],
-    [
-      [
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F1",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F2",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F3",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F4",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "VOLD",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "UP",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "VOLU",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        }
-      ],
-      [
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F5",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F6",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F7",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F8",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "LEFT",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "DOWN",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "RIGHT",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "/",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "=",
-          "type": null,
-          "mod": null
-        }
-      ],
-      [
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F9",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F10",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F11",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "F12",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "MPRV",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "MPLY",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "MNXT",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
+          "value": ")",
           "type": null,
           "mod": null
         },
         {
           "value": "\\",
-          "type": null,
-          "mod": null
-        }
-      ],
-      [
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "TRNS",
-          "type": null,
-          "mod": null
-        },
-        {
-          "value": "FLASH",
-          "type": null,
-          "mod": null
+          "type": "tapkey",
+          "mod": "RGUI"
         }
       ]
     ],
     [
       [
         {
-          "value": "~",
+          "value": "TRNS",
+          "type": null,
+          "mod": "LALT"
+        },
+        {
+          "value": "Q",
+          "type": null
+        },
+        {
+          "value": "W",
+          "type": null
+        },
+        {
+          "value": "E",
+          "type": null
+        },
+        {
+          "value": "R",
+          "type": null
+        },
+        {
+          "value": "T",
+          "type": null
+        },
+        {
+          "value": "Y",
+          "type": null
+        },
+        {
+          "value": "u",
+          "type": null
+        },
+        {
+          "value": "I",
+          "type": null
+        },
+        {
+          "value": "O",
+          "type": null
+        },
+        {
+          "value": "P",
+          "type": null
+        },
+        {
+          "value": "]",
+          "type": null,
+          "mod": "RALT"
+        }
+      ],
+      [
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": "LCTRL"
+        },
+        {
+          "value": "A",
+          "type": null
+        },
+        {
+          "value": "S",
+          "type": null
+        },
+        {
+          "value": "D",
+          "type": null
+        },
+        {
+          "value": "F",
+          "type": null
+        },
+        {
+          "value": "G",
+          "type": null
+        },
+        {
+          "value": "H",
+          "type": null
+        },
+        {
+          "value": "J",
+          "type": null
+        },
+        {
+          "value": "K",
+          "type": null
+        },
+        {
+          "value": "L",
+          "type": null
+        },
+        {
+          "value": ";",
+          "type": null
+        },
+        {
+          "value": "\"",
+          "type": null,
+          "mod": "RCTRL"
+        }
+      ],
+      [
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": "LSHIFT"
+        },
+        {
+          "value": "Z",
+          "type": null
+        },
+        {
+          "value": "X",
+          "type": null
+        },
+        {
+          "value": "C",
+          "type": null
+        },
+        {
+          "value": "V",
+          "type": null
+        },
+        {
+          "value": "B",
+          "type": null
+        },
+        {
+          "value": "N",
+          "type": null
+        },
+        {
+          "value": "M",
+          "type": null
+        },
+        {
+          "value": ",",
+          "type": null
+        },
+        {
+          "value": ".",
+          "type": null
+        },
+        {
+          "value": "/",
+          "type": null
+        },
+        {
+          "value": "[",
+          "type": null,
+          "mod": "RSHIFT"
+        }
+      ],
+      [
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": "LGUI"
+        },
+        {
+          "value": "TRNS",
+          "type": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": "RGUI"
+        },
+        {
+          "value": "TRNS",
+          "type": null
+        },
+        {
+          "value": "TRNS",
+          "type": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": "L2"
+        },
+        {
+          "value": "TRNS",
+          "type": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": "RGUI"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
@@ -533,22 +498,22 @@
           "mod": null
         },
         {
-          "value": "(",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
         {
-          "value": ")",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
         {
-          "value": "[",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
         {
-          "value": "]",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
@@ -578,12 +543,12 @@
           "mod": null
         },
         {
-          "value": "/",
+          "value": "_",
           "type": null,
           "mod": null
         },
         {
-          "value": "=",
+          "value": "TRNS",
           "type": null,
           "mod": null
         }
@@ -595,22 +560,22 @@
           "mod": null
         },
         {
-          "value": "{",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
         {
-          "value": "}",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
         {
-          "value": "(",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
         {
-          "value": ")",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
@@ -640,12 +605,242 @@
           "mod": null
         },
         {
+          "value": "+",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        }
+      ],
+      [
+        {
           "value": "TRNS",
           "type": null,
           "mod": null
         },
         {
-          "value": "\\",
+          "value": "[",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "0",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "]",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "F1",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "F2",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "F3",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "f4",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "PGUP",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "VOLU",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "UP",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "VOLD",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "L0",
+          "type": "setdefault",
+          "mod": null
+        }
+      ],
+      [
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "f5",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "f6",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "f7",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "f8",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "PGDOWN",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "LEFT",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "DOWN",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "RIGHT",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "L1",
+          "type": "setdefault",
+          "mod": null
+        }
+      ],
+      [
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "f9",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "f10",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "f11",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "f12",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "MPRV",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "MPLY",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "MNXT",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "TRNS",
+          "type": null,
+          "mod": null
+        },
+        {
+          "value": "FLASH",
           "type": null,
           "mod": null
         }
@@ -677,7 +872,7 @@
           "mod": null
         },
         {
-          "value": "0",
+          "value": "TRNS",
           "type": null,
           "mod": null
         },
@@ -695,7 +890,3 @@
     ]
   ]
 }
-
-
-
-
