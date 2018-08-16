@@ -68,15 +68,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | Bksp |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |  ]   |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Tab  |   {  |   -  |   (  |  Esc | Bksp |Space |Enter |   )  |   =  |   }  |  \   |
+ * | Tab  |   {  |   -  |   (  |  Gui |Lower |Space |Enter |   )  |   =  |   }  |  \   |
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = {
-  // BUG: a lot of these are wrong when translating to dvorak...
   {ALT_T(KC_GRV ), KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   , KC_Y   , KC_U   , KC_I   , KC_O   , KC_P   , ALT_T(KC_LBRC)},
-  {CTL_T(KC_ESC ), KC_A   , KC_S   , KC_D   , KC_F   , KC_G   , KC_H   , KC_J   , KC_K   , KC_L   , KC_SCLN, CTL_T(KC_MINS)},
+  {CTL_T(KC_ESC ), KC_A   , KC_S   , KC_D   , KC_F   , KC_G   , KC_H   , KC_J   , KC_K   , KC_L   , KC_SCLN, CTL_T(KC_QUOT)},
   {SFT_T(KC_BSPC), KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_N   , KC_M   , KC_COMM, KC_DOT , KC_SLSH, SFT_T(KC_RBRC)},
-  {GUI_T(KC_TAB ), KC_LCBR, KC_MINS, KC_LPRN, KC_LGUI, LOWER  , KC_SPC , TH_ENT , KC_RPRN, KC_EQL , KC_RCBR, GUI_T(KC_BSLS)}
+  {GUI_T(KC_TAB ), KC_UNDS, KC_MINS, KC_LPRN, KC_LGUI, LOWER  , KC_SPC , TH_ENT , KC_RPRN, KC_EQL , KC_PLUS, GUI_T(KC_BSLS)}
 },
 
 /* Lower
@@ -91,10 +90,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = {
-  {_______, _______, _______, _______, _______, _______, _______, KC_7   , KC_8   , KC_9   , KC_0   , _______},
-  {_______, _______, _______, _______, _______, _______, _______, KC_4   , KC_5   , KC_6   , KC_UNDS, _______},
-  {_______, _______, _______, _______, _______, _______, _______, KC_1   , KC_2   , KC_3   , KC_PLUS, _______},
-  {_______, _______, _______, _______, _______, _______, _______, KC_0   , _______, _______, _______, _______}
+  {_______, _______, KC_COMM, KC_ASTR, KC_AMPR, _______, _______, KC_7   , KC_8   , KC_9   , KC_DOT , KC_SLSH},
+  {KC_CAPS, _______, KC_CIRC, KC_PERC, KC_DLR , _______, _______, KC_4   , KC_5   , KC_6   , KC_UNDS, KC_MINS},
+  {_______, _______, KC_HASH, KC_AT  , KC_EXLM, _______, _______, KC_1   , KC_2   , KC_3   , KC_PLUS, KC_EQL },
+  {_______, _______, _______, _______, _______, _______, _______, KC_0   , _______, _______, _______, KC_BSLS}
 },
 
 /* Raise
@@ -109,11 +108,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = {
-  {_______, KC_F1  , KC_F2  , KC_F3  , KC_F4  , _______, _______, KC_VOLD, KC_UP  , KC_VOLU, _______, DVORAK }, // AU_OFF , AU_ON  ,
-  {_______, KC_F5  , KC_F6  , KC_F7  , KC_F8  , _______, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, QWERTY }, // MUV_IN , MUV_DE ,
-  {_______, KC_F9  , KC_F10 , KC_F11 , KC_F12 , _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, KC_EJCT}, // MU_OFF , MU_ON  ,
-  {_______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RESET  }  // MI_OFF , MI_ON  ,
+  {_______, KC_F1  , KC_F2  , KC_F3  , KC_F4  , _______, _______, KC_PGDN, KC_UP  , KC_PGUP, _______, DVORAK   }, // AU_OFF , AU_ON  ,
+  {_______, KC_F5  , KC_F6  , KC_F7  , KC_F8  , _______, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, QWERTY   }, // MUV_IN , MUV_DE ,
+  {_______, KC_F9  , KC_F10 , KC_F11 , KC_F12 , _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, KC_EJCT  }, // MU_OFF , MU_ON  ,
+  {_______, _______, _______, _______, _______, _______, _______, _______, KC_VOLD, KC_VOLU, _______, RESET    }  // MI_OFF , MI_ON  ,
 }
+// TODO: Consider adding PWR, SLP, WAKE, etc.
+
 
 };
 
