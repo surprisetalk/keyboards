@@ -12,7 +12,7 @@
 #define DESCRIPTION     keyboard firmware for Zlant
 
 /* Tell iPads that they can power this device */
-#define USB_MAX_POWER_CONSUMPTION 50
+#define USB_MAX_POWER_CONSUMPTION 100
 
 #define ALLOW_SHIFTED_MOD_TAP true
 

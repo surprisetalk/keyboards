@@ -3,6 +3,9 @@
 
 #include "config_common.h"
 
+/* Tell iPads that they can power this device */
+#define USB_MAX_POWER_CONSUMPTION 100
+
 #define PERMISSIVE_HOLD
 #define TAPPING_TERM        150
 
