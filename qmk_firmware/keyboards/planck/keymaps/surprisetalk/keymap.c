@@ -108,13 +108,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = {
-  {_______, KC_F1  , KC_F2  , KC_F3  , KC_F4  , _______, _______, KC_PGDN, KC_UP  , KC_PGUP, _______, DVORAK   }, // AU_OFF , AU_ON  ,
-  {_______, KC_F5  , KC_F6  , KC_F7  , KC_F8  , _______, _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, QWERTY   }, // MUV_IN , MUV_DE ,
-  {_______, KC_F9  , KC_F10 , KC_F11 , KC_F12 , _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, KC_EJCT  }, // MU_OFF , MU_ON  ,
-  {_______, _______, _______, _______, _______, _______, _______, _______, KC_VOLD, KC_VOLU, _______, RESET    }  // MI_OFF , MI_ON  ,
+  {_______, KC_F1  , KC_F2  , KC_F3  , KC_F4  , RGB_HUD, RGB_HUI, KC_PGDN, KC_UP  , KC_PGUP, _______, DVORAK   }, // AU_OFF , AU_ON  ,
+  {_______, KC_F5  , KC_F6  , KC_F7  , KC_F8  , RGB_SAD, RGB_SAI, KC_LEFT, KC_DOWN, KC_RGHT, _______, QWERTY   }, // MUV_IN , MUV_DE ,
+  {_______, KC_F9  , KC_F10 , KC_F11 , KC_F12 , RGB_VAD, RGB_VAI, KC_MPRV, KC_MPLY, KC_MNXT, _______, KC_EJCT  }, // MU_OFF , MU_ON  ,
+  {_______, _______, _______, _______, _______, RGB_TOG, RGB_MOD, _______, KC_VOLD, KC_VOLU, _______, RESET    }  // MI_OFF , MI_ON  ,
 }
 // TODO: Consider adding PWR, SLP, WAKE, etc.
 
+//  _______, RESET,   DEBUG,    RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD, KC_DEL ,
+//  _______, _______, MU_MOD,  AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, QWERTY,  COLEMAK, DVORAK,  PLOVER,  _______,
+//  _______, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  TERM_ON, TERM_OFF, _______, _______, _______,
+//  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
 
 };
 
@@ -153,6 +157,108 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false;
       break;
+      // case BACKLIT:
+      //   if (record->event.pressed) {
+      //     register_code(KC_RSFT);
+      //     #ifdef BACKLIGHT_ENABLE
+      //       backlight_step();
+      //     #endif
+      //     #ifdef KEYBOARD_planck_rev5
+      //       PORTE &= ~(1<<6);
+      //     #endif
+      //   } else {
+      //     unregister_code(KC_RSFT);
+      //     #ifdef KEYBOARD_planck_rev5
+      //       PORTE |= (1<<6);
+      //     #endif
+      //   }
+      //   return false;
+      //   break;
   }
   return true;
 }
+
+// bool muse_mode = false;
+// uint8_t last_muse_note = 0;
+// uint16_t muse_counter = 0;
+// uint8_t muse_offset = 70;
+// uint16_t muse_tempo = 50;
+// 
+// void encoder_update(bool clockwise) {
+//   if (muse_mode) {
+//     if (IS_LAYER_ON(_RAISE)) {
+//       if (clockwise) {
+//         muse_offset++;
+//       } else {
+//         muse_offset--;
+//       }
+//     } else {
+//       if (clockwise) {
+//         muse_tempo+=1;
+//       } else {
+//         muse_tempo-=1;
+//       }
+//     }
+//   } else {
+//     if (clockwise) {
+//       register_code(KC_PGDN);
+//       unregister_code(KC_PGDN);
+//     } else {
+//       register_code(KC_PGUP);
+//       unregister_code(KC_PGUP);
+//     }
+//   }
+// }
+
+// void dip_update(uint8_t index, bool active) {
+//   switch (index) {
+//     case 0:
+//       if (active) {
+//         #ifdef AUDIO_ENABLE
+//           PLAY_SONG(plover_song);
+//         #endif
+//         layer_on(_ADJUST);
+//       } else {
+//         #ifdef AUDIO_ENABLE
+//           PLAY_SONG(plover_gb_song);
+//         #endif
+//         layer_off(_ADJUST);
+//       }
+//       break;
+//     case 1:
+//       if (active) {
+//         muse_mode = true;
+//       } else {
+//         muse_mode = false;
+//         #ifdef AUDIO_ENABLE
+//           stop_all_notes();
+//         #endif
+//       }
+//    }
+// }
+// 
+// void matrix_scan_user(void) {
+//   #ifdef AUDIO_ENABLE
+//     if (muse_mode) {
+//       if (muse_counter == 0) {
+//         uint8_t muse_note = muse_offset + SCALE[muse_clock_pulse()];
+//         if (muse_note != last_muse_note) {
+//           stop_note(compute_freq_for_midi_note(last_muse_note));
+//           play_note(compute_freq_for_midi_note(muse_note), 0xF);
+//           last_muse_note = muse_note;
+//         }
+//       }
+//       muse_counter = (muse_counter + 1) % muse_tempo;
+//     }
+//   #endif
+// }
+// 
+// bool music_mask_user(uint16_t keycode) {
+//   switch (keycode) {
+//     case RAISE:
+//     case LOWER:
+//       return false;
+//     default:
+//       return true;
+//   }
+// }
