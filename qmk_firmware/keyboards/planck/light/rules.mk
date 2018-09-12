@@ -1,5 +1,5 @@
-MIDI_ENABLE = yes
-AUDIO_ENABLE = yes           # Audio output on port C6
+MIDI_ENABLE = no
+AUDIO_ENABLE = yes
 RGB_MATRIX_ENABLE = yes
 
 MCU = at90usb1286
