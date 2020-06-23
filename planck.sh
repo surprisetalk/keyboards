@@ -1,7 +1,9 @@
 #!/bin/bash
 
+# rev4 -> rev6
+
 cd qmk_firmware && \
-make planck/rev4:surprisetalk && \
+make planck/rev6:surprisetalk:dfu-util && \
 echo "Please put your keyboard in RESET mode.\n" && \
 sudo sleep 10 && \
 sudo dfu-programmer atmega32u4 erase && \
