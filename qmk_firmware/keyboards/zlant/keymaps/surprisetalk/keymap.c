@@ -181,7 +181,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = {
-  {X(MOON), _______, KC_COMM, KC_ASTR, KC_AMPR, _______, _______, KC_7   , KC_8   , KC_9   , KC_DOT , KC_SLSH},
+  {_______, _______, KC_COMM, KC_ASTR, KC_AMPR, _______, _______, KC_7   , KC_8   , KC_9   , KC_DOT , KC_SLSH},
   {KC_CAPS, _______, KC_CIRC, KC_PERC, KC_DLR , _______, _______, KC_4   , KC_5   , KC_6   , KC_UNDS, KC_MINS},
   {_______, _______, KC_HASH, KC_AT  , KC_EXLM, _______, _______, KC_1   , KC_2   , KC_3   , KC_PLUS, KC_EQL },
   {_______, _______, _______, _______, _______, _______, _______, KC_0   , _______, _______, _______, KC_BSLS}
@@ -239,18 +239,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       return false;
       break;
 
-    case OS_LNX:
-      set_unicode_input_mode(UC_LNX);
-      return false;
-      break;
-    case OS_OSX:
-      set_unicode_input_mode(UC_OSX);
-      return false;
-      break;
+      // case OS_LNX:
+      //   set_unicode_input_mode(OS_LNX);
+      //   return false;
+      //   break;
+      // case OS_OSX:
+      //   set_unicode_input_mode(OS_OSX);
+      //   return false;
+      //   break;
   }
   return true;
 }
 
-void matrix_init_user(void) {
-  set_unicode_input_mode(UC_LNX);
-};
+// void matrix_init_user(void) {
+//   set_unicode_input_mode(OS_LNX);
+// };
